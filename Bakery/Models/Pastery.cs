@@ -2,13 +2,18 @@ namespace Bakery
 {
   public class Pastery
   {
-    public int Price { get; set; }
+    public int Price { get; }
     public int Quantity { get; set; }
 
     public Pastery(int price, int quantity)
     {
-      Price = 0;
+      Price = 2;
       Quantity = 0;
+    }
+
+    public int pasteryPrice(int quantity)
+    {
+      return quantity;
     }
 
   }

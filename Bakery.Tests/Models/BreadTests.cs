@@ -59,18 +59,28 @@ namespace Bakery.TestTools
     public void Pastery_ReturnPrice_int()
     {
       Pastery pastery = new Pastery(0,0);
-      int testResult = 0;
+      int testResult = 2;
       int result = pastery.Price;
       Assert.AreEqual(result, testResult);
     }
 
     [TestMethod]
-    public void Paster_ReturnQuantity_int()
+    public void Pastery_ReturnQuantity_int()
     {
       Pastery pastery = new Pastery(0,0);
       int result = pastery.Quantity;
       int testResult = 0;
       Assert.AreEqual(result, testResult);
+    }
+
+    [TestMethod]
+    public void pasteryPrice_ReturnPriceGivenQuantity_int()
+    {
+      Pastery pastery = new Pastery(0,0);
+      int result = pastery.pasteryPrice(1);
+      int testResult = 1;
+      Assert.AreEqual(result, testResult);
+
     }
 
   }
