@@ -2,15 +2,21 @@ namespace Bakery
 {
   public class Bread
   {
-    public int Price {get; set;}
+    public int Price { get; set; }
+    public int Quantity { get; set; }
 
+    public Bread(int price, int quantity)
+    {
+      Quantity = quantity;
+      Price = price;
+    }
 
     public int breadPrice(int userQuantity)
     {
       int breadCost = 5;
       int userPrice = breadCost * userQuantity;
       int discountPrice = (userQuantity / 3) * breadCost;
-      if(userQuantity >= 3)
+      if (userQuantity >= 3)
       {
         userPrice = userPrice - discountPrice;
       }
