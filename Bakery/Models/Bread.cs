@@ -4,7 +4,7 @@ namespace Bakery
   {
     public string greetingCustomer()
     {
-      return "";
+      return "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
     }
   }
 }
