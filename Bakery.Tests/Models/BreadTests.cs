@@ -64,5 +64,14 @@ namespace Bakery.TestTools
       Assert.AreEqual(result, testResult);
     }
 
+    [TestMethod]
+    public void Paster_ReturnQuantity_int()
+    {
+      Pastery pastery = new Pastery(0,0);
+      int result = pastery.Quantity;
+      int testResult = 0;
+      Assert.AreEqual(result, testResult);
+    }
+
   }
 }
