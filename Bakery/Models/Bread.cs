@@ -2,10 +2,8 @@ namespace Bakery
 {
   public class Bread
   {
-    public string greetingCustomer()
-    {
-      return "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
-    }
+    public int Price {get; set;}
+
 
     public int breadPrice(int userQuantity)
     {
@@ -18,5 +16,7 @@ namespace Bakery
       }
       return userPrice;
     }
+
+    public static string greetingCustomer = "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
   }
 }

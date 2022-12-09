@@ -7,15 +7,6 @@ namespace Bakery.TestTools
   public class BreadTests
   {
     [TestMethod]
-    public void greetingCustomer_ReturnsGreetingWhenStart_String()
-    {
-      Bread breadGreeting = new Bread();
-      string expected = "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
-      string result = breadGreeting.greetingCustomer();
-      Assert.AreEqual(expected, result);
-    }
-
-    [TestMethod]
     public void breadPrice_ReturnsPriceOfBread_int()
     {
       Bread breadCost = new Bread();
@@ -46,11 +37,11 @@ namespace Bakery.TestTools
   }
 
 
-//----------------------------------------------------------------------------------------------------
+  //----------------------------------------------------------------------------------------------------
   [TestClass]
   public class PasteryTests
   {
     //[TestMethod]
-    
+
   }
 }
