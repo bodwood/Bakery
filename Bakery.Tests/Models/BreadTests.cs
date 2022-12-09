@@ -35,7 +35,7 @@ namespace Bakery.TestTools
     [TestMethod]
     public void breadPrice_ReturnPriceFor3Loafs_int()
     {
-      Bread newPrice = new Bread(5,3);;
+      Bread newPrice = new Bread(5,3);
       int expectedPrice = 20;
       int userQuantity = 6;
       int actualPrice = newPrice.breadPrice(userQuantity);
@@ -48,7 +48,12 @@ namespace Bakery.TestTools
   [TestClass]
   public class PasteryTests
   {
-    //[TestMethod]
+    [TestMethod]
+    public void Pastery_ReturnPasteryType_type()
+    {
+      Pastery pasteryType = new Pastery();
+      Assert.AreEqual(typeof(Pastery), pasteryType.GetType());
+    }
 
   }
 }

@@ -7,8 +7,8 @@ namespace Bakery
 
     public Bread(int price, int quantity)
     {
-      Quantity = quantity;
-      Price = price;
+      Quantity = 0;
+      Price = 0;
     }
 
     public int breadPrice(int userQuantity)
