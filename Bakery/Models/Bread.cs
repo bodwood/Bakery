@@ -22,6 +22,7 @@ namespace Bakery
       return userPrice;
     }
 
-    public static string greetingCustomer = "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
+    public static string greetingCustomer = "Welcome to our bakery. Our prices: \nBread Loafs: $5 ea. \nPastery: $2 ea. ";
+    public static string discountGreeting = "\nDiscounts are as follows:\nBread: Buy 2 get 1 free \nPastery: Buy 3 for $5";
   }
 }
