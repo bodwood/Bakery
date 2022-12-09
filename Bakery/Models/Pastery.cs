@@ -5,7 +5,7 @@ namespace Bakery
     public int Price { get; }
     public int Quantity { get; set; }
 
-    public Pastery(int price, int quantity)
+    public Pastery(int price)
     {
       Price = 2;
       Quantity = 0;

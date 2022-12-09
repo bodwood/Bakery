@@ -17,11 +17,24 @@ namespace Bakery.Program
     }
     public static void createOrder(char userChoice)
     {
-   
       if (userChoice == 'b')
       {
         Console.WriteLine("\nHow many loafs of bread would you like to purchase?");
-        
+        int userBreadQuantity = int.Parse(Console.ReadLine().Trim());
+        Bread userBread = new Bread(userBreadQuantity);
+        int totalBreadPrice = userBread.breadPrice(userBreadQuantity);
+        if (userBreadQuantity <= 0)
+        {
+          Console.WriteLine("!!Error: Please enter a number greater than 0!!\n");
+          createOrder('b');
+        }
+        else if (userBreadQuantity == 1)
+        {
+          Console.WriteLine($"The total price for {userBreadQuantity} bread loaf is: ${totalBreadPrice}");
+        }
+        else
+          Console.WriteLine($"The total price for {userBreadQuantity} bread loafs is: ${totalBreadPrice}");
+
       }
       else if (userChoice == 'p')
       {
@@ -31,8 +44,9 @@ namespace Bakery.Program
       {
         System.Environment.Exit(0);
       }
-      else{
-        Console.WriteLine("\n!!Please enter a valid input:!!\n'B' for bread loafs\n'P' for pasteries\n'E' to exit application");
+      else
+      {
+        Console.WriteLine("\n!!Please enter a valid input!!\n'B' for bread loafs\n'P' for pasteries\n'E' to exit application");
         userChoice = char.Parse(Console.ReadLine().ToLower().Trim());
         createOrder(userChoice);
       }

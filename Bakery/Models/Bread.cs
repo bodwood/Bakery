@@ -2,10 +2,10 @@ namespace Bakery
 {
   public class Bread
   {
-    public int Price { get; set; }
+    public int Price { get;}
     public int Quantity { get; set; }
 
-    public Bread(int price, int quantity)
+    public Bread(int quantity)
     {
       Quantity = 0;
       Price = 5;

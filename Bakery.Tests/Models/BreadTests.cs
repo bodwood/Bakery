@@ -9,14 +9,14 @@ namespace Bakery.TestTools
     [TestMethod]
     public void PriceConstructor_CreatesInstanceOfPrice_Price()
     {
-      Bread newPrice = new Bread(5, 3);
+      Bread newPrice = new Bread(5);
       Assert.AreEqual(typeof(Bread), newPrice.GetType());
     }
 
     [TestMethod]
     public void breadPrice_ReturnsPriceOfBread_int()
     {
-      Bread newPrice = new Bread(5, 3);
+      Bread newPrice = new Bread(5);
       int expectedPrice = 5;
       int userQuantity = 1;
       int actualPrice = newPrice.breadPrice(userQuantity);
@@ -26,7 +26,7 @@ namespace Bakery.TestTools
     [TestMethod]
     public void breadPrice_ReturnPriceFor2Loafs_int()
     {
-      Bread newPrice = new Bread(5, 3);
+      Bread newPrice = new Bread(5);
       int expectedPrice = 10;
       int actualPrice = newPrice.breadPrice(2);
       Assert.AreEqual(expectedPrice, actualPrice);
@@ -35,7 +35,7 @@ namespace Bakery.TestTools
     [TestMethod]
     public void breadPrice_ReturnPriceFor3Loafs_int()
     {
-      Bread newPrice = new Bread(5, 3);
+      Bread newPrice = new Bread(5);
       int expectedPrice = 20;
       int userQuantity = 6;
       int actualPrice = newPrice.breadPrice(userQuantity);
@@ -51,14 +51,14 @@ namespace Bakery.TestTools
     [TestMethod]
     public void Pastery_ReturnPasteryType_type()
     {
-      Pastery pasteryType = new Pastery(0, 0);
+      Pastery pasteryType = new Pastery(0);
       Assert.AreEqual(typeof(Pastery), pasteryType.GetType());
     }
 
     [TestMethod]
     public void Pastery_ReturnPrice_int()
     {
-      Pastery pastery = new Pastery(0, 0);
+      Pastery pastery = new Pastery(0);
       int testResult = 2;
       int result = pastery.Price;
       Assert.AreEqual(result, testResult);
@@ -67,7 +67,7 @@ namespace Bakery.TestTools
     [TestMethod]
     public void Pastery_ReturnQuantity_int()
     {
-      Pastery pastery = new Pastery(0, 0);
+      Pastery pastery = new Pastery(0);
       int result = pastery.Quantity;
       int testResult = 0;
       Assert.AreEqual(result, testResult);
@@ -76,7 +76,7 @@ namespace Bakery.TestTools
     [TestMethod]
     public void pasteryPrice_ReturnPriceGivenQuantity_int()
     {
-      Pastery pastery = new Pastery(0, 0);
+      Pastery pastery = new Pastery(0);
       int result = pastery.pasteryPrice(10);
       int testResult = 17;
       Assert.AreEqual(result, testResult);
