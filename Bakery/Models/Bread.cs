@@ -10,7 +10,13 @@ namespace Bakery
     public int breadPrice(int userQuantity)
     {
       int breadCost = 5;
-      return breadCost;
+      int userPrice = breadCost * userQuantity;
+      int discountPrice = (userQuantity / 3) * breadCost;
+      if(userQuantity >= 3)
+      {
+        userPrice = userPrice - discountPrice;
+      }
+      return userPrice;
     }
   }
 }

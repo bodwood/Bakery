@@ -26,11 +26,21 @@ namespace Bakery.TestTools
     }
 
     [TestMethod]
-    public void breadPrice_ReturnPriceForMoreThanOneBread_int()
+    public void breadPrice_ReturnPriceFor2Loafs_int()
     {
       Bread breadCost = new Bread();
       int expectedPrice = 10;
       int actualPrice = breadCost.breadPrice(2);
+      Assert.AreEqual(expectedPrice, actualPrice);
+    }
+
+    [TestMethod]
+    public void breadPrice_ReturnPriceFor3Loafs_int()
+    {
+      Bread breadCost = new Bread();
+      int expectedPrice = 20;
+      int userQuantity = 6;
+      int actualPrice = breadCost.breadPrice(userQuantity);
       Assert.AreEqual(expectedPrice, actualPrice);
     }
   }
