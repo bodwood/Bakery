@@ -51,8 +51,17 @@ namespace Bakery.TestTools
     [TestMethod]
     public void Pastery_ReturnPasteryType_type()
     {
-      Pastery pasteryType = new Pastery();
+      Pastery pasteryType = new Pastery(0,0);
       Assert.AreEqual(typeof(Pastery), pasteryType.GetType());
+    }
+
+    [TestMethod]
+    public void Pastery_ReturnPrice_int()
+    {
+      Pastery pastery = new Pastery(0,0);
+      int testResult = 0;
+      int result = pastery.Price;
+      Assert.AreEqual(result, testResult);
     }
 
   }
