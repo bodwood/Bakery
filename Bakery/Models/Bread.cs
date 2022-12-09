@@ -6,5 +6,10 @@ namespace Bakery
     {
       return "Welcome to our bakery. Our prices are as follows \nBread: \nPastery: ";
     }
+
+    public int breadPrice(int userQuantity)
+    {
+      return 0;
+    }
   }
 }
