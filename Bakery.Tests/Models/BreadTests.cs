@@ -77,10 +77,9 @@ namespace Bakery.TestTools
     public void pasteryPrice_ReturnPriceGivenQuantity_int()
     {
       Pastery pastery = new Pastery(0,0);
-      int result = pastery.pasteryPrice(1);
-      int testResult = 2;
+      int result = pastery.pasteryPrice(10);
+      int testResult = 17;
       Assert.AreEqual(result, testResult);
-
     }
 
   }

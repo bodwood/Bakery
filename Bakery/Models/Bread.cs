@@ -13,9 +13,8 @@ namespace Bakery
 
     public int breadPrice(int userQuantity)
     {
-      int breadCost = 5;
-      int userPrice = breadCost * userQuantity;
-      int discountPrice = (userQuantity / 3) * breadCost;
+      int userPrice = this.Price * userQuantity;
+      int discountPrice = (userQuantity / 3) * this.Price;
       if (userQuantity >= 3)
       {
         userPrice = userPrice - discountPrice;
