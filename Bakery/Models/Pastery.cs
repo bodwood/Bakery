@@ -13,7 +13,7 @@ namespace Bakery
 
     public int pasteryPrice(int quantity)
     {
-      return quantity;
+      return this.Price;
     }
 
   }

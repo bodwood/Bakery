@@ -78,7 +78,7 @@ namespace Bakery.TestTools
     {
       Pastery pastery = new Pastery(0,0);
       int result = pastery.pasteryPrice(1);
-      int testResult = 1;
+      int testResult = 2;
       Assert.AreEqual(result, testResult);
 
     }
