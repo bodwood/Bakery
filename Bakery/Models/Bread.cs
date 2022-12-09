@@ -9,7 +9,8 @@ namespace Bakery
 
     public int breadPrice(int userQuantity)
     {
-      return 0;
+      int breadCost = 5;
+      return breadCost;
     }
   }
 }
