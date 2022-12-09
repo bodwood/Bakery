@@ -30,15 +30,28 @@ namespace Bakery.Program
         }
         else if (userBreadQuantity == 1)
         {
-          Console.WriteLine($"The total price for {userBreadQuantity} bread loaf is: ${totalBreadPrice}");
+          Console.WriteLine($"\nThe total price for {userBreadQuantity} bread loaf is: ${totalBreadPrice}");
         }
         else
-          Console.WriteLine($"The total price for {userBreadQuantity} bread loafs is: ${totalBreadPrice}");
-
+          Console.WriteLine($"\nThe total price for {userBreadQuantity} bread loafs is: ${totalBreadPrice}");
       }
       else if (userChoice == 'p')
       {
         Console.WriteLine("\nHow many pasteries would you like to purchase?");
+        int userPasteryQuantity = int.Parse(Console.ReadLine().Trim());
+        Pastery userPastery = new Pastery(userPasteryQuantity);
+        int totalPasteryPrice = userPastery.pasteryPrice(userPasteryQuantity);
+        if (userPasteryQuantity <= 0)
+        {
+          Console.WriteLine("!!Error: Please enter a number greater than 0!!\n");
+          createOrder('p');
+        }
+        else if (userPasteryQuantity == 1)
+        {
+          Console.WriteLine($"\nThe total price for {userPasteryQuantity} pastery is: ${totalPasteryPrice}");
+        }
+        else
+          Console.WriteLine($"\nThe total price for {userPasteryQuantity} pasteries is: ${totalPasteryPrice}");
       }
       else if (userChoice == 'e')
       {
@@ -50,7 +63,7 @@ namespace Bakery.Program
         userChoice = char.Parse(Console.ReadLine().ToLower().Trim());
         createOrder(userChoice);
       }
-
+      
     }
 
   }
