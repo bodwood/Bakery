@@ -43,7 +43,6 @@ namespace Bakery.TestTools
     }
   }
 
-
   //----------------------------------------------------------------------------------------------------
   [TestClass]
   public class PasteryTests
