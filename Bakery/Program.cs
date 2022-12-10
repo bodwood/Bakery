@@ -63,7 +63,7 @@ namespace Bakery.Program
         userChoice = char.Parse(Console.ReadLine().ToLower().Trim());
         createOrder(userChoice);
       }
-      
+
     }
 
   }
