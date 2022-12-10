@@ -35,6 +35,8 @@ namespace Bakery.Program
         else
           Console.WriteLine($"\nThe total price for {userBreadQuantity} bread loafs is: ${totalBreadPrice}");
       }
+
+      //----------------------------------------
       else if (userChoice == 'p')
       {
         Console.WriteLine("\nHow many pasteries would you like to purchase?");
